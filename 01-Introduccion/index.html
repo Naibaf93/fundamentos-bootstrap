@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducción a Bootstrap</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+
+    <header class="header p-5 mb-5">
+        <h1 class="text-center">Bootstrap 5 - La Guía Completa inc. BEM y SASS +10 Proyectos</h1>
+        <p class="text-center text-white">Básicos de Bootstrap 5</p>
+    </header>
+
+    <section class="seccion">
+        <h1 class="text-center my-5 heading">Contenedores</h1>
+
+        <div class="container-xs">contenido</div>
+        <div class="container-sm">contenido</div>
+        <div class="container-md">contenido</div>
+        <div class="container-lg">contenido</div>
+        <div class="container-xl">contenido</div>
+        <div class="container-xxl">contenido</div>
+        
+        <div class="container-fluid">contenido</div>
+
+    </section>
+
+    <section class="seccion">
+        <h1 class="text-center my-5 heading">Grid</h1>
+
+        <div class="container-xl">
+            <div class="row">
+                <div class="col-md-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam molestiae, dolores molestias hic eum provident itaque explicabo culpa optio nemo beatae exercitationem. Esse voluptates nulla ipsum assumenda nam labore dolorum.</div>
+                <div class="col-sm-6 col-md-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni asperiores dignissimos impedit vel voluptatibus fuga quisquam hic, corrupti cumque, debitis, esse accusantium quas unde cupiditate dolorem sequi soluta consequatur voluptate.</div>
+                <div class="col-sm-6 col-md-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni asperiores dignissimos impedit vel voluptatibus fuga quisquam hic, corrupti cumque, debitis, esse accusantium quas unde cupiditate dolorem sequi soluta consequatur voluptate.</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="seccion">
+        <h1 class="text-center my-5 heading">Tipografia</h1>
+
+        <h1>Encabezado 1</h1>
+        <h2>Encabezado 2</h2>
+        <h3>Encabezado 3</h3>
+        <h4>Encabezado 4</h4>
+        <h5>Encabezado 5</h5>
+        <h6>Encabezado 6</h6>
+
+        <p>Este es un parrafo</p>
+
+        <!-- Displays -->
+
+        <h1 class="display-1">Encabezado con display</h1>
+        <h2 class="display-2">Encabezado con display</h2>
+        <h3 class="display-3">Encabezado con display</h3>
+        <h4 class="display-4">Encabezado con display</h4>
+        <h5 class="display-5">Encabezado con display</h5>
+        <h6 class="display-6">Encabezado con display</h6>
+
+        <p class="display-1">Parrafo con display</p>
+
+        <!-- Fontsize -->
+
+        <h1 class="fs-1">Encabezado con fontsize</h1>
+        <h2 class="fs-2">Encabezado con fontsize</h2>
+        <h3 class="fs-3">Encabezado con fontsize</h3>
+        <h4 class="fs-4">Encabezado con fontsize</h4>
+        <h5 class="fs-5">Encabezado con fontsize</h5>
+        <h6 class="fs-6">Encabezado con fontsize</h6>
+
+        <p class="fs-1">parrafo con fontsize</p>
+
+        <!-- utilidades para alinear textos -->
+
+        <p class="text-start">Texto a la izquierda</p>
+        <p class="text-center">Texto al centro</p>
+        <p class="text-end">Texto a la derecha</p>
+
+        <!-- con media queries  -->
+
+        <p class="text-end text-md-center text-lg-start text-xl-end">texto a la derecha, centro e izquierda</p>
+
+        <!-- capitalizacion -->
+
+        <p class="text-lowercase">MINUSCULAS</p>
+        <p class="text-uppercase">mayusculas</p>
+        <p class="text-capitalize">Encabezado con tipo capitalizado</p>
+
+        <!-- Controlar font-weight -->
+
+        <p class="fw-bold">Texto</p>
+        <p class="fw-normal">Texto</p>
+        <p class="fw-light">Texto</p>
+
+    </section>
+
+    <section class="seccion">
+        <h1 class="text-center my-5 heading">Colores en Bootstrap</h1>
+
+        <h1 class="text-primary">Colores en textos</h1>
+        <h1 class="text-secondary">Colores en textos</h1>
+        <h1 class="text-danger">Colores en textos</h1>
+        <h1 class="text-warning">Colores en textos</h1>
+        <h1 class="text-success">Colores en textos</h1>
+        <h1 class="text-dark">Colores en textos</h1>
+        <h1 class="text-info">Colores en textos</h1>
+        <h1 class="text-light">Colores en textos</h1>
+        <h1 class="text-white">Colores en textos</h1>
+
+
+
+        <div class="bg-primary">un div con contenido</div>
+        <div class="bg-secondary">un div con contenido</div>
+        <div class="bg-danger text-warning text-center">un div con contenido</div>
+        <div class="bg-warning">un div con contenido</div>
+        <div class="bg-success">un div con contenido</div>
+        <div class="bg-dark text-white text-center">un div con contenido</div>
+        <div class="bg-info">un div con contenido</div>
+        <div class="bg-light">un div con contenido</div>
+        <div class="bg-white">un div con contenido</div>
+
+    </section>
+
+    <section class="seccion">
+        <h1 class="text-center my-5 heading">Imágenes</h1>
+
+        
+        <div class="container-xl">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="img/curso_1.jpg" alt="imagen curso" class="img-thumbnail">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="seccion">
+        <h1 class="text-center my-5 heading">Botones</h1>
+
+
+    </section>
+
+    <section class="seccion">
+        <h1 class="text-center my-5 heading">Margins y Paddings</h1>
+
+    </section>
+
+    <section class="seccion">
+        <h1 class="text-center my-5 heading">Spinners</h1>
+
+    </section>
+
+    <section class="seccion">
+        <h1 class="text-center my-5 heading">Cards</h1>
+
+    </section>
+
+    <section class="seccion">
+        <h1 class="text-center my-5 heading">Formularios</h1>
+
+    </section>
+
+    <section class="seccion">
+        <h1 class="text-center my-5 heading">Toasts</h1>
+
+    </section>
+
+    <section class="seccion">
+        <h1 class="text-center my-5 heading">Carousel</h1>
+
+    </section>
+    
+    <section class="seccion">
+        <h1 class="text-center my-5 heading">Modals</h1>
+
+    </section>
+
+    <section class="seccion">
+        <h1 class="text-center my-5 heading">Navs</h1>
+   
+    </section>
+    
+    <section class="seccion">
+        <h1 class="text-center my-5 heading">Off Canvas</h1>
+
+    </section>
+
+</html>
