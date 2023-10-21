@@ -347,11 +347,11 @@
         <button type="button" class="btn btn-primary" id="toastBtn">mostrar notificación</button>
         
         <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 10;">
-            <div id="toast" class="toast hide">
+            <div id="toast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
                 <div class="toast-header">
-                    <strong class="me-auto">Email...</strong>
+                    <strong class="me-auto">Nuevo Email...</strong>
                     <small>Hace 3 minutos</small>
-                    <button type="button" data-bs-dismiss="toast" class="btn-close"></button>
+                    <button type="button" data-bs-dismiss="toast" aria-label="Cerrar notificacion" class="btn-close"></button>
                 </div>
     
                 <div class="toast-body">
