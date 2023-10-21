@@ -344,8 +344,21 @@
     <section class="seccion">
         <h1 class="text-center my-5 heading">Toasts</h1>
 
+        <button type="button" class="btn btn-primary" id="toastBtn">mostrar notificación</button>
         
-    </section>
+        <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 10;">
+            <div id="toast" class="toast hide">
+                <div class="toast-header">
+                    <strong class="me-auto">Email...</strong>
+                    <small>Hace 3 minutos</small>
+                    <button type="button" data-bs-dismiss="toast" class="btn-close"></button>
+                </div>
+    
+                <div class="toast-body">
+                    <p>Haz recibido un mensaje</p>
+                </div>
+            </div>    
+        </div>
 
     <section class="seccion">
         <h1 class="text-center my-5 heading">Carousel</h1>
@@ -368,5 +381,16 @@
     </section>
     
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.querySelector('#toastBtn').onclick = e => {
+            e.preventDefault();
+
+            // mostrar el toast
+
+            const toastEl = document.querySelector('#toast');
+            const toast = new bootstrap.Toast(toastEl);
+            toast.show();
+        }
+    </script>
 </body>
 </html>
