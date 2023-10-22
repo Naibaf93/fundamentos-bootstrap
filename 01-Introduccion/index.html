@@ -334,7 +334,6 @@
                         </div>
 
                         <button type="submit" class="btn btn-primary"><i class="bi bi-plus-circle"></i> Registrar</button>
-
                     </form>                    
                 </div>
             </div>
@@ -401,6 +400,48 @@
     <section class="seccion">
         <h1 class="text-center my-5 heading">Modals</h1>
 
+        <div class="container-xl">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal">Ver formulario</button>
+
+            <!-- Modal -->
+
+            <div id="modal" class="modal fade">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2 class="modal-tittle">Nuevo cliente</h2>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+
+                        <div class="modal-body">
+                            <form>
+                                <legend><i class="bi bi-person-plus-fill"></i>Nuevo cliente</legend>
+        
+                                <div class="mb-3">
+                                    <label class="form-label" for="nombre">Nombre</label>
+                                    <input type="text" class="form-control" id="nombre">
+                                </div>
+        
+                                <div class="mb-3">
+                                    <label class="form-label" for="empresa">Empresa</label>
+                                    <input type="text" class="form-control" id="empresa">
+                                </div>
+        
+                                <div class="mb-3">
+                                    <label class="form-label" for="email">Email</label>
+                                    <input type="email" class="form-control" id="email">    
+                                </div>
+                            </form>                            
+                        </div>
+
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-primary"><i class="bi bi-plus-circle"></i> Registrar</button>
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal"><i class="bi bi-x-circle"></i>Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <section class="seccion">
